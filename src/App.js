@@ -30,6 +30,7 @@ export default function App() {
         <ThemeProvider>
           <ThemeSettings>
             <ThemeLocalization>
+            
               <SnackbarProvider>
                 <Router />
               </SnackbarProvider>
