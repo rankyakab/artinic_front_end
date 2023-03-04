@@ -40,6 +40,4 @@ export function capitalize(string) {
   return string ? string.replace(/\b\w/g, (l) => l.toUpperCase()) : string;
 }
 
-export const formatNumber = (number) => {
-  return number ? number.toLocaleString() : number;
-};
+export const formatNumber = (number) =>  number ? number.toLocaleString() : number

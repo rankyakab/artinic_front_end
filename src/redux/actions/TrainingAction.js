@@ -1,4 +1,4 @@
-import axios from 'axios';
+// import axios from 'axios';
 import * as TrainingTypes from '../types/TrainingTypes';
 import { API_ROUTES } from '../config/TrainingConfig';
 import { httpRequest } from '../../helpers/index';

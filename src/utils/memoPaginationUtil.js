@@ -1,3 +1,4 @@
+// import PropTypes from 'prop-types';
 import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
 import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
 import { Pagination, PaginationItem } from '@mui/material';
@@ -15,11 +16,8 @@ export const TablePagination = ({
   paginationPage,
   total,
   handleChangePage,
-  styles,
-  rowsPerPage,
-  filteredTotal = [],
-}) => {
-  return (
+ 
+}) => (
     <div
       style={{
         display: 'flex',
@@ -50,5 +48,4 @@ export const TablePagination = ({
         )}
       />
     </div>
-  );
-};
+  )

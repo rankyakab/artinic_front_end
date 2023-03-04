@@ -1,4 +1,4 @@
-import axios from 'axios';
+// import axios from 'axios';
 import * as MemoTypes from '../types/MemoTypes';
 import { API_ROUTES } from '../config/MemoConfig';
 import { httpRequest } from '../../helpers/index';

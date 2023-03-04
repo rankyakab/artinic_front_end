@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { Outlet } from 'react-router-dom';
 // @mui
 import { Box } from '@mui/material';
 // hooks
@@ -7,12 +6,12 @@ import useResponsive from '../../hooks/useResponsive';
 // components
 import { useSettingsContext } from '../../components/settings';
 //
-// import Main from './Main';
-import Header from './header';
+
 import NavMini from './nav/NavMini';
 import NavVertical from './nav/NavVertical';
 import NavHorizontal from './nav/NavHorizontal';
 // import DashboardHeader from './DashboardHeader';
+import RequireAuth from '../../components/RequireAuth';
 
 // ----------------------------------------------------------------------
 
@@ -27,9 +26,7 @@ export default function DashboardLayout() {
 
   const isNavMini = themeLayout === 'mini';
 
-  const handleOpen = () => {
-    setOpen(true);
-  };
+ 
 
   const handleClose = () => {
     setOpen(false);
@@ -46,8 +43,8 @@ export default function DashboardLayout() {
         {isDesktop ? <NavHorizontal /> : renderNavVertical}
 
         <Box sx={{ py: 3, backgroundColor: '#F8F9FD', width: '100%' }}>
-          <p> helo</p>
-          <Outlet />
+        
+          <RequireAuth />
         </Box>
       </>
     );
@@ -67,7 +64,7 @@ export default function DashboardLayout() {
           {isDesktop ? <NavMini /> : renderNavVertical}
 
           <Box sx={{ py: 3, backgroundColor: '#F8F9FD', width: '100%' }}>
-            <Outlet />
+            <RequireAuth />
           </Box>
         </Box>
       </>
@@ -86,7 +83,7 @@ export default function DashboardLayout() {
 
         <Box sx={{ py: 3, backgroundColor: '#F8F9FD', width: '100%' }}>
           <p>hello</p>
-          <Outlet />
+          <RequireAuth />
         </Box>
       </Box>
     </>

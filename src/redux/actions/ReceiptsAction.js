@@ -1,4 +1,4 @@
-import axios from 'axios';
+// import axios from 'axios';
 import * as ReceiptsTypes from '../types/ReceiptsType';
 import { API_ROUTES } from '../config/ReceiptsConfig';
 import { httpRequest } from '../../helpers/index';

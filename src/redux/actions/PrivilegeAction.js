@@ -1,4 +1,4 @@
-import axios from 'axios';
+// import axios from 'axios';
 import * as PrivilegeTypes from '../types/PrivilegeTypes';
 import { API_ROUTES } from '../config/PrivilegeConfig';
 import { httpRequest } from '../../helpers/index';

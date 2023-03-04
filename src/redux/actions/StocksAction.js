@@ -1,4 +1,4 @@
-import axios from 'axios';
+// import axios from 'axios';
 import * as StocksTypes from '../types/StocksTypes';
 import { API_ROUTES } from '../config/StocksConfig';
 import { httpRequest } from '../../helpers/index';

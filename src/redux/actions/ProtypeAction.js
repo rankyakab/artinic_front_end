@@ -1,4 +1,4 @@
-import axios from 'axios';
+// import axios from 'axios';
 import * as ProtypeTypes from '../types/ProtypeTypes';
 import { API_ROUTES } from '../config/ProtypeConfig';
 import { httpRequest } from '../../helpers/index';

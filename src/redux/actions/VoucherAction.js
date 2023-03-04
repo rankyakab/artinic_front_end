@@ -1,4 +1,4 @@
-import axios from 'axios';
+// import axios from 'axios';
 import * as VoucherTypes from '../types/VoucherTypes';
 import { API_ROUTES } from '../config/VoucherConfig';
 import { httpRequest } from '../../helpers/index';

@@ -1,4 +1,4 @@
-import axios from 'axios';
+// import axios from 'axios';
 import * as LogisticsTypes from '../types/LogisticsTypes';
 import { API_ROUTES } from '../config/LogisticsConfig';
 import { httpRequest } from '../../helpers/index';
