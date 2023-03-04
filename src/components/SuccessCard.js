@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Modal, Stack, Typography } from '@mui/material';
 import { Button, Card } from '../styles/main';
 import successBadge from '../assets/images/successBadge.png';
@@ -38,5 +39,13 @@ function SuccessCard({ open, handleClose, message, btnText, handleClick }) {
     </Modal>
   );
 }
-
+SuccessCard.propTypes = {
+  open:PropTypes.bool,
+   handleClose:PropTypes.func, 
+   message:PropTypes.string, 
+   btnText:PropTypes.string,
+    handleClick:PropTypes.func
+ 
+  
+};
 export default SuccessCard;

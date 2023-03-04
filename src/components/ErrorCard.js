@@ -1,5 +1,6 @@
 import React from 'react';
 import { Modal, Stack, Typography } from '@mui/material';
+import PropTypes from 'prop-types';
 import { Button, Card } from '../styles/main';
 import errorBadge from '../assets/images/errorIcon.svg';
 
@@ -41,5 +42,14 @@ function ErrorCard({ open, handleClose, message, btnText, handleClick }) {
     </Modal>
   );
 }
-
+ErrorCard.propTypes = {
+  open:PropTypes.bool,
+   handleClose:PropTypes.func, 
+   message:PropTypes.string, 
+   btnText:PropTypes.string,
+    handleClick:PropTypes.func
+ 
+  
+};
+        
 export default ErrorCard;

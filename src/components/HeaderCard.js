@@ -1,5 +1,6 @@
 import { Grid, Stack, Box, Button, Typography, InputAdornment, IconButton } from '@mui/material';
-import React, { useState } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import { GeneralInput, InputLabel, HeadCard } from '../styles/main';
 import Iconify from './iconify/Iconify';
 
@@ -8,7 +9,6 @@ const HeaderCard = ({
   totalNumberLabel,
   totalNumber,
   filterLabel,
-  filterText,
   buttonLabel,
   onClick,
   handleSearch,
@@ -90,4 +90,22 @@ const HeaderCard = ({
   );
 };
 
+
+HeaderCard.propTypes = {
+  searchLabel: PropTypes.string,
+  totalNumberLabel: PropTypes.string,
+  totalNumber: PropTypes.number,
+  filterLabel: PropTypes.string,
+  buttonLabel: PropTypes.string,
+   onClick:PropTypes.func,
+  handleSearch:PropTypes.func,
+  keyword:PropTypes.string,
+  setKeyword:PropTypes.func,
+  filterOptions:PropTypes.array
+  
+};
+        
+         
+      
+      
 export default HeaderCard;
